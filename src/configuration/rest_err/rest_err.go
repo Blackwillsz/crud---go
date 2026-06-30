@@ -5,10 +5,13 @@ import (
 )
 
 type RestErr struct {
-	Message string   `json:"message"`
-	Err     string   `json:"error"`
-	Code    int      `json:"code"`
-	Causes  []Causes `json:"causes"`
+	Message string `json:"message"`
+
+	Err string `json:"error"`
+
+	Code int `json:"code"`
+
+	Causes []Causes `json:"causes"`
 }
 
 type Causes struct {
